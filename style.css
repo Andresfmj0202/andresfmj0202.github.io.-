@@ -198,7 +198,7 @@ body {
   border: var(--pixel-border);
   padding: 10px; /* menos padding */
   background-image: url(resources/cityBackground.png);
-  background-size: cover; /* mejor ajuste */
+  background-size: contain; /* mejor ajuste */
 }
 
 .box {
@@ -262,3 +262,77 @@ body {
   border: 1px solid var(--color-dark);
   box-shadow: 1px 1px var(--color-light);
 }
+/*fin section profesionalprofile*/
+
+/*inicio section clientes-proveedores */
+.mission-panel {
+  font-family: var(--font-pixel);
+  text-shadow: none;
+  color: var(--color-secondary);
+  background-color: #0a0a0a;
+  padding: 32px;
+  border: 4px solid var(--color-tertiary);
+  text-align: center;
+  
+}
+
+.panel-title {
+  font-size: 20px;
+  margin-bottom: 24px;
+  border-bottom: 2px dashed var(--color-tertiary);
+  padding-bottom: 10px;
+  
+}
+
+.panel-row {
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.data-box {
+  border: 2px solid var(--color-tertiary);
+  padding: 16px;
+  background-color: #101010;
+  flex: 1;
+}
+
+.data-box.wide {
+  width: 100%;
+  margin: 0 auto 24px;
+}
+
+.data-box h3 {
+  color: var(--color-tertiary);
+  border-bottom: 1px solid var(--color-tertiary);
+  margin-bottom: 8px;
+  
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.button-panel {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.ui-btn {
+  font-family: var(--font-pixel);
+  background-color: var(--color-light);
+  color: #000;
+  padding: 10px 20px;
+  border: 2px solid var(--color-light);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.ui-btn:hover {
+  background-color: var(--color-tertiary);
+}
+
